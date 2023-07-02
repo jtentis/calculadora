@@ -10,7 +10,7 @@
 
 Feito com o simples intuito de aprender.
 
-![](imagens/calc.png)
+![](imagens/calc.gif)
 
 </br>
 
