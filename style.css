@@ -11,6 +11,47 @@ html{
     padding: 0;
 }
 
+.child-left{
+    position: absolute;
+    bottom: 0;
+    padding-left: 1000px;
+    padding-bottom: 40px;
+}
+
+.left-panel{
+    position: absolute;
+    padding-right: 1280px;
+    padding-bottom: 40px;
+    font-weight: 100;
+}
+
+.typewriter h1 {
+    color: white;
+    font-size: 50px;
+    word-break: break-all;
+    font-family: inherit;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #4e96ff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #4e96ff }
+  }
+
 body{
     align-items: center;
     background: linear-gradient(320deg, #4bb5eb, #23016e);
@@ -23,11 +64,9 @@ body{
 
 .wrapper{
     backdrop-filter: blur(5.5px);
-    /* -webkit-backdrop-filter: blur(5.5px); */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.726);
     backdrop-filter: blur(4px);
-    /* -webkit-backdrop-filter: blur(4px); */
     background-color: #00000067;
     border: 1px solid rgba(0, 0, 0, 0.432);
     flex-basis: 400px;
@@ -37,7 +76,6 @@ body{
 
 .screen{
     backdrop-filter: blur(5.5px);
-    /* -webkit-backdrop-filter: blur(5.5px); */
     background: rgba(255, 255, 255, 0.60);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
@@ -59,7 +97,6 @@ body{
 
 .calc-button-operators{
     backdrop-filter: blur(5.5px);
-    /* -webkit-backdrop-filter: blur(5.5px); */
     background: rgba(194, 65, 245, 0.336);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
@@ -75,7 +112,6 @@ body{
 
 .calc-button-numbers{
     backdrop-filter: blur(5.5px);
-    /* -webkit-backdrop-filter: blur(5.5px); */
     background: rgba(1, 4, 8, 0.281);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
@@ -89,7 +125,6 @@ body{
 
 .calc-button-double{
     backdrop-filter: blur(5.5px);
-    /* -webkit-backdrop-filter: blur(5.5px); */
     background: rgba(51, 247, 220, 0.384);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
@@ -104,7 +139,6 @@ body{
 
 .calc-button-zero{
     backdrop-filter: blur(5.5px);
-    /* -webkit-backdrop-filter: blur(5.5px); */
     background: rgba(1, 4, 8, 0.281);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
@@ -119,20 +153,24 @@ body{
 
 .calc-button-double:hover{
     color: inherit;
+    cursor: pointer;
 }
 
 .calc-button-numbers:hover{
     color: inherit;
+    cursor: pointer;
 }
 
 .calc-button-operators:hover{
     background-origin: inherit;
     color: inherit;
+    cursor: pointer;
 }
 
 .calc-button-zero:hover{
     background-origin: inherit;
     color: inherit;
+    cursor: pointer;
 }
 
 .calc-button-double:active{
